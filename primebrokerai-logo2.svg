@@ -1,0 +1,28 @@
+<svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main Logo Group -->
+  <g id="PrimeBrokerAI-Logo-Option2">
+    <!-- Logo Symbol - Abstract geometric shape combining P and B -->
+    <g id="LogoSymbol" transform="translate(275, 180)">
+      <!-- Base shape - dual triangles -->
+      <path d="M125,0 L250,125 L125,250 L0,125 Z" fill="#0A3161"/>
+      <!-- Inner cutout -->
+      <path d="M125,50 L200,125 L125,200 L50,125 Z" fill="white"/>
+      <!-- Red accent - representing AI/tech element -->
+      <path d="M125,75 L175,125 L125,175 L125,225 L75,175 L25,125 L75,75 Z" fill="#BB133E"/>
+      <!-- Digital circuit line -->
+      <line x1="125" y1="0" x2="125" y2="50" stroke="white" stroke-width="6"/>
+      <line x1="125" y1="200" x2="125" y2="250" stroke="white" stroke-width="6"/>
+      <line x1="0" y1="125" x2="50" y2="125" stroke="white" stroke-width="6"/>
+      <line x1="200" y1="125" x2="250" y2="125" stroke="white" stroke-width="6"/>
+    </g>
+
+    <!-- Text: PRIME -->
+    <text x="290" y="460" font-family="Montserrat, sans-serif" font-weight="700" font-size="45" fill="#0A3161">PRIME</text>
+    
+    <!-- Text: BROKER -->
+    <text x="435" y="460" font-family="Montserrat, sans-serif" font-weight="400" font-size="45" fill="#0A3161">BROKER</text>
+    
+    <!-- Text: AI -->
+    <text x="625" y="460" font-family="Montserrat, sans-serif" font-weight="700" font-size="45" fill="#BB133E">AI</text>
+  </g>
+</svg>
