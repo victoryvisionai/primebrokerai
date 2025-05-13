@@ -1,0 +1,35 @@
+ <!-- Settings Page Start -->
+  <section id="settings">
+    <h2>Settings</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" value="johndoe" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" value="john@example.com" />
+      </div>
+      <div class="form-group">
+        <label for="timezone">Timezone</label>
+        <select id="timezone">
+          <option>America/Los_Angeles</option>
+          <option>America/New_York</option>
+          <option>Europe/London</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Notifications</label>
+        <div class="toggle">
+          <input type="checkbox" id="emailNotifications" checked />
+          <label for="emailNotifications">Email Notifications</label>
+        </div>
+        <div class="toggle">
+          <input type="checkbox" id="smsNotifications" />
+          <label for="smsNotifications">SMS Notifications</label>
+        </div>
+      </div>
+      <button type="button" class="btn">Save Changes</button>
+    </form>
+  </section>
+  <!-- Settings Page End -->
