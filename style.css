@@ -1,98 +1,39 @@
 body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
-
-/* Navbar/Header styling */
-.navbar {
-  background-color: #111;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.container {
+    padding: 20px;
 }
-
-.logo {
-  height: 40px;
+nav {
+    background-color: #111;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
+nav .logo img {
+    height: 40px;
 }
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
 }
-
-nav ul li a.active,
-nav ul li a:hover {
-  color: #ffa500;
-  border-bottom: 2px solid #ffa500;
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
 }
-
-/* Main content spacing and layout */
-.main-content {
-  padding: 30px 50px;
+nav .nav-links a:hover,
+nav .nav-links .active {
+    color: #ffa500;
+    border-bottom: 2px solid #ffa500;
 }
-
-.page-title {
-  color: #ffa500;
-  margin-bottom: 20px;
-}
-
-/* KPI Card Styling */
-.kpis {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 30px;
-}
-
-.kpi-card {
-  background-color: #111;
-  border-radius: 6px;
-  padding: 20px;
-  text-align: center;
-  flex: 1;
-  margin-right: 10px;
-  box-shadow: 0 0 10px rgba(255,165,0,0.5);
-}
-
-.kpi-card:last-child {
-  margin-right: 0;
-}
-
-.kpi-title {
-  display: block;
-  color: #bbb;
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.kpi-value {
-  font-size: 28px;
-  color: #ffa500;
-}
-
-/* Chart Container Styling */
-.charts {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.chart-container {
-  background-color: #111;
-  padding: 15px;
-  border-radius: 6px;
-  flex: 1;
-  box-shadow: 0 0 10px rgba(255,165,0,0.3);
+/* Additional styles for tables, cards, forms etc. */
+.data-table, .kanban, .deal-card, .settings-form {
+    background: #111;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(255,165,0,0.5);
 }
