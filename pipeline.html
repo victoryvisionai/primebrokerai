@@ -1,43 +1,53 @@
-<!-- Pipeline Page Start -->
-  <section id="pipeline">
-    <h2>Pipeline</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Broker AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Prime Broker AI" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leads.html">Leads</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="pipeline.html">Pipeline</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <main class="container">
+    <h1>Pipeline</h1>
     <div class="kanban">
-      <div class="column">
-        <h3>Prospecting</h3>
-        <div class="card">
-          <h4>Deal A</h4>
-          <p>Office Building - $2M</p>
+        <div class="kanban-column">
+            <h2>Prospecting</h2>
+            <div class="card">Deal A - Office $2M</div>
+            <div class="card">Deal B - Retail $5M</div>
         </div>
-        <div class="card">
-          <h4>Deal B</h4>
-          <p>Retail Center - $5M</p>
+        <div class="kanban-column">
+            <h2>Underwriting</h2>
+            <div class="card">Deal C - Warehouse $3M</div>
         </div>
-      </div>
-      <div class="column">
-        <h3>Underwriting</h3>
-        <div class="card">
-          <h4>Deal C</h4>
-          <p>Warehouse - $3M</p>
+        <div class="kanban-column">
+            <h2>Approved</h2>
+            <div class="card">Deal D - Apartment $10M</div>
         </div>
-      </div>
-      <div class="column">
-        <h3>Approved</h3>
-        <div class="card">
-          <h4>Deal D</h4>
-          <p>Apartment Complex - $10M</p>
+        <div class="kanban-column">
+            <h2>Closed</h2>
+            <div class="card">Deal E - Condo $8M</div>
         </div>
-        <div class="card">
-          <h4>Deal E</h4>
-          <p>Condo Development - $8M</p>
-        </div>
-      </div>
-      <div class="column">
-        <h3>Closed</h3>
-        <div class="card">
-          <h4>Deal F</h4>
-          <p>Office Tower - $15M</p>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- Pipeline Page End -->
+</main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
