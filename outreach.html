@@ -1,102 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Broker AI</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Broker AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Prime Broker AI" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leads.html">Leads</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="pipeline.html">Pipeline</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Header with logo and navigation links -->
-<header>
-  <nav>
-    <div class="logo">
-      <img src="logo.jpg" alt="Prime Broker AI" style="height:40px;">
-      <span>Prime Broker AI</span>
+  <main class="container">
+    <h1>Email Sequences</h1>
+    <div class="outreach-container">
+        <div class="sequence-list">
+            <ul>
+                <li>ACME Corp Outreach</li>
+                <li>Beta Co Follow-up</li>
+                <li>Client X Nurture</li>
+            </ul>
+        </div>
+        <div class="sequence-details">
+            <div class="message outgoing">You: Hello, regarding financing...</div>
+            <div class="message incoming">ACME Corp: Interested, send details.</div>
+            <div class="ai-suggestion">AI Suggestion: Schedule follow-up call.</div>
+        </div>
     </div>
-    <ul>
-      <li><a href="dashboard.html">Dashboard</a></li>
-      <li><a href="leads.html">Leads</a></li>
-      <li><a href="outreach.html">Outreach</a></li>
-      <li><a href="deals.html">Deals</a></li>
-      <li><a href="pipeline.html">Pipeline</a></li>
-      <li><a href="settings.html">Settings</a></li>
-    </ul>
-  </nav>
-</header>
-   <div class="outreach-container">
-      <div class="sequence-list">
-        <h3>Email Sequences</h3>
-        <ul>
-          <li class="active">ACME Corp Outreach</li>
-          <li>Beta Co Follow-up</li>
-          <li>Client X Nurture</li>
-        </ul>
-      </div>
-      <div class="sequence-details">
-        <h3>Sequence: ACME Corp Outreach</h3>
-        <div class="message outgoing">
-          <p><strong>You:</strong> Hello, I'm reaching out regarding financing options...</p>
-        </div>
-        <div class="message incoming">
-          <p><strong>ACME Corp:</strong> Thank you for contacting us. We are interested...</p>
-        </div>
-        <div class="message outgoing">
-          <p><strong>You:</strong> Great! I will gather some options and send them over.</p>
-        </div>
-        <div class="ai-suggestion">
-          AI Suggestion: {"next_best_action": "Schedule call", "draft_email": "Would you be available for a call next week to discuss details?"}
-        </div>
-      </div>
-    </div>
+</main>
 
-<script>
-// Loan Volume Chart
-new Chart(document.getElementById('loanVolumeChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-    datasets: [{
-      label: 'Loan Volume ($M)',
-      data: [10, 15, 8, 12],
-      backgroundColor: '#ffa500',
-      borderColor: '#ffffff',
-      borderWidth: 2
-    }]
-  },
-  options: {
-    responsive: true,
-    scales: {
-      x: { ticks: { color: '#ffffff' } },
-      y: { ticks: { color: '#ffffff' } }
-    }
-  }
-});
-
-// Leads by Source Chart
-new Chart(document.getElementById('leadsSourceChart'), {
-  type: 'doughnut',
-  data: {
-    labels: ['Referral', 'Website', 'Conference'],
-    datasets: [{
-      data: [5, 8, 3],
-      backgroundColor: ['#ffa500', '#555', '#888'],
-      borderColor: '#ffffff',
-      borderWidth: 2
-    }]
-  },
-  options: { responsive: true }
-});
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-<section id="outreach">
-    <h2>Outreach</h2>
- 
-  </section>
-  <!-- Outreach Page End -->
