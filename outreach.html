@@ -1,7 +1,32 @@
-   <!-- Outreach Page Start -->
-  <section id="outreach">
-    <h2>Outreach</h2>
-    <div class="outreach-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Broker AI</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Header with logo and navigation links -->
+<header>
+  <nav>
+    <div class="logo">
+      <img src="logo.jpg" alt="Prime Broker AI" style="height:40px;">
+      <span>Prime Broker AI</span>
+    </div>
+    <ul>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="leads.html">Leads</a></li>
+      <li><a href="outreach.html">Outreach</a></li>
+      <li><a href="deals.html">Deals</a></li>
+      <li><a href="pipeline.html">Pipeline</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+</header>
+   <div class="outreach-container">
       <div class="sequence-list">
         <h3>Email Sequences</h3>
         <ul>
@@ -26,5 +51,52 @@
         </div>
       </div>
     </div>
+
+<script>
+// Loan Volume Chart
+new Chart(document.getElementById('loanVolumeChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+    datasets: [{
+      label: 'Loan Volume ($M)',
+      data: [10, 15, 8, 12],
+      backgroundColor: '#ffa500',
+      borderColor: '#ffffff',
+      borderWidth: 2
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      x: { ticks: { color: '#ffffff' } },
+      y: { ticks: { color: '#ffffff' } }
+    }
+  }
+});
+
+// Leads by Source Chart
+new Chart(document.getElementById('leadsSourceChart'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Referral', 'Website', 'Conference'],
+    datasets: [{
+      data: [5, 8, 3],
+      backgroundColor: ['#ffa500', '#555', '#888'],
+      borderColor: '#ffffff',
+      borderWidth: 2
+    }]
+  },
+  options: { responsive: true }
+});
+</script>
+
+</body>
+</html>
+
+
+<section id="outreach">
+    <h2>Outreach</h2>
+ 
   </section>
   <!-- Outreach Page End -->
