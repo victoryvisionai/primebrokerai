@@ -1,65 +1,50 @@
-  <!-- Leads Page Start -->
-  <section id="leads">
-   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Broker AI</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Broker AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-
-    <h2>Leads</h2>
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Company</th>
-          <th>Score</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Alice Smith</td>
-          <td>Company A</td>
-          <td class="score-high">88</td>
-          <td>Contacted</td>
-        </tr>
-        <tr>
-          <td>Bob Johnson</td>
-          <td>Company B</td>
-          <td class="score-med">72</td>
-          <td>Contacted</td>
-        </tr>
-        <tr>
-          <td>Carol Williams</td>
-          <td>Company C</td>
-          <td class="score-low">45</td>
-          <td>New</td>
-        </tr>
-        <tr>
-          <td>David Brown</td>
-          <td>Company D</td>
-          <td class="score-high">95</td>
-          <td>Contacted</td>
-        </tr>
-        <tr>
-          <td>Erin Davis</td>
-          <td>Company E</td>
-          <td class="score-med">60</td>
-          <td>Follow-up</td>
-        </tr>
-      </tbody>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Prime Broker AI" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leads.html">Leads</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="pipeline.html">Pipeline</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main class="container">
+    <h1>Leads</h1>
+    <table class="data-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Company</th>
+                <th>Score</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Alice Smith</td><td>Company A</td><td>88</td><td>Contacted</td></tr>
+            <tr><td>Bob Johnson</td><td>Company B</td><td>72</td><td>Contacted</td></tr>
+            <tr><td>Carol Williams</td><td>Company C</td><td>45</td><td>New</td></tr>
+        </tbody>
     </table>
-    <div class="insight">
-      AI Lead Insights: {"new_leads_this_week": 5, "high_priority": [{"name": "David Brown", "score": 95}, {"name": "Alice Smith", "score": 88}], "lead_sources": {"referral": 2, "web": 3}}
+    <div class="ai-insights">
+        AI Lead Insights: High Priority Leads Identified.
     </div>
-    
-  </section>
-<!-- Chart.js CDN -->
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<!-- Custom JavaScript -->
-<script src="script.js"></script>
-  <!-- Leads Page End -->
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
