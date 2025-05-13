@@ -1,0 +1,39 @@
+
+
+/* Global Dark Theme Styles (Bloomberg Terminal aesthetic) */
+body {
+  margin: 0;
+  background-color: #000;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #ffa500;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+a {
+  color: #ffa500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Add all other CSS from your HTML's <style> here */
+/* (Navigation, Sections, Login, Dashboard, Leads, Outreach, Deals, Pipeline, Settings, Buttons, etc.) */
+
+/* Tron-style glowing accent for interactive elements */
+button, .btn {
+  background: #333;
+  color: #ffa500;
+  border: 1px solid #ffa500;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+button:hover, .btn:hover {
+  background: #444;
+  box-shadow: 0 0 8px #ffa500;
+}
