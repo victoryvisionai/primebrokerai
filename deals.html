@@ -1,41 +1,42 @@
- <!-- Deals Page Start -->
-  <section id="deals">
-    <h2>Deals</h2>
-    <div class="tabs">
-      <button class="active">Property</button>
-      <button>Borrower</button>
-      <button>Financials</button>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Broker AI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.jpg" alt="Prime Broker AI" height="50">
+            </div>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leads.html">Leads</a></li>
+                <li><a href="outreach.html">Outreach</a></li>
+                <li><a href="deals.html">Deals</a></li>
+                <li><a href="pipeline.html">Pipeline</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="container">
+    <h1>Deals</h1>
+    <div class="deal-card">
+        <h3>Property Details</h3>
+        <p>123 Main St, Springfield - Office - $5M</p>
+        <h3>Borrower Details</h3>
+        <p>John Doe - Credit Score: 740 - Net Worth: $1.5M</p>
+        <h3>Loan Details</h3>
+        <p>$3.5M, LTV: 70%, Term: 10 years</p>
     </div>
-    <div class="tab-content active" id="tab-property">
-      <div class="tab-section">
-        <div class="field-group">
-          <h4>Property Details</h4>
-          <p><strong>Address:</strong> 123 Main St, Springfield</p>
-          <p><strong>Type:</strong> Office</p>
-          <p><strong>Value:</strong> $5,000,000</p>
-        </div>
-        <div class="field-group">
-          <h4>Borrower Details</h4>
-          <p><strong>Name:</strong> John Doe</p>
-          <p><strong>Credit Score:</strong> 740</p>
-          <p><strong>Net Worth:</strong> $1,500,000</p>
-        </div>
-        <div class="field-group">
-          <h4>Loan Details</h4>
-          <p><strong>Amount:</strong> $3,500,000</p>
-          <p><strong>LTV:</strong> 70%</p>
-          <p><strong>Term:</strong> 10 years</p>
-        </div>
-        <div class="field-group">
-          <h4>Status</h4>
-          <p><strong>Stage:</strong> Underwriting</p>
-          <p><strong>Next Step:</strong> Appraisal</p>
-          <p><strong>Closing Date:</strong> TBD</p>
-        </div>
-      </div>
-      <div class="analysis">
-        AI Analysis: {"propertyRisk": "Low", "borrowerRisk": "Medium", "recommendation": "Proceed with caution due to moderate borrower risk."}
-      </div>
-    </div>
-  </section>
-  <!-- Deals Page End -->
+</main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
