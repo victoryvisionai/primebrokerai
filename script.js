@@ -20,6 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   });
+document.querySelectorAll('.nav-links a').forEach(link => {
+    if(link.href === window.location.href){
+        link.classList.add('active');
+    }
+});
 
   const ctxLeads = document.getElementById('chartLeads').getContext('2d');
   new Chart(ctxLeads, {
