@@ -1,26 +1,105 @@
-   <div class="outreach-container">
-      <div class="sequence-list">
-        <h3>Email Sequences</h3>
-        <ul>
-          <li class="active">ACME Corp Outreach</li>
-          <li>Beta Co Follow-up</li>
-          <li>Client X Nurture</li>
-        </ul>
-      </div>
-      <div class="sequence-details">
-        <h3>Sequence: ACME Corp Outreach</h3>
-        <div class="message outgoing">
-          <p><strong>You:</strong> Hello, I'm reaching out regarding financing options...</p>
-        </div>
-        <div class="message incoming">
-          <p><strong>ACME Corp:</strong> Thank you for contacting us. We are interested...</p>
-        </div>
-        <div class="message outgoing">
-          <p><strong>You:</strong> Great! I will gather some options and send them over.</p>
-        </div>
-        <div class="ai-suggestion">
-          AI Suggestion: {"next_best_action": "Schedule call", "draft_email": "Would you be available for a call next week to discuss details?"}
-        </div>
-      </div>
-    </div>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Broker AI - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
 
+  <!-- Header -->
+  <header>
+    <nav>
+      <img src="logo.jpg" alt="Prime Broker AI" style="height:40px;">
+      <ul>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="leads.html">Leads</a></li>
+        <li><a href="outreach.html">Outreach</a></li>
+        <li><a href="deals.html">Deals</a></li>
+        <li><a href="pipeline.html">Pipeline</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Dashboard Content -->
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <div class="kpis">
+        <div class="kpi">
+          <h3>Active Deals</h3>
+          <p class="value">12</p>
+        </div>
+        <div class="kpi">
+          <h3>New Leads (Week)</h3>
+          <p class="value">5</p>
+        </div>
+        <div class="kpi">
+          <h3>Conversion Rate</h3>
+          <p class="value">30%</p>
+        </div>
+        <div class="kpi">
+          <h3>Pipeline Volume</h3>
+          <p class="value">$50M</p>
+        </div>
+      </div>
+      
+      <div class="charts">
+        <div class="chart-card">
+          <canvas id="loanVolumeChart"></canvas>
+        </div>
+        <div class="chart-card">
+          <canvas id="leadSourceChart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const loanVolumeCtx = document.getElementById('loanVolumeChart');
+    new Chart(loanVolumeCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Q1', 'Q2', 'Q3', 'Q4'],
+        datasets: [{
+          label: 'Loan Volume ($M)',
+          data: [10, 15, 8, 12],
+          backgroundColor: '#ffa500',
+          borderColor: '#ffffff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { ticks: { color: '#fff' }, grid: { color: '#444' } },
+          y: { ticks: { color: '#fff' }, grid: { color: '#444' } }
+        }
+      }
+    });
+
+    const leadSourceCtx = document.getElementById('leadSourceChart');
+    new Chart(leadSourceCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Referral', 'Website', 'Conference'],
+        datasets: [{
+          data: [5, 8, 3],
+          backgroundColor: ['#ffa500', '#555', '#888'],
+          borderColor: '#ffffff',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        plugins: {
+          legend: { labels: { color: '#fff' } }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
