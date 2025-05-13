@@ -1,145 +1,26 @@
-<!-- Dashboard/Home Page Start -->
-  <section id="dashboard">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Broker AI</title>
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prime Broker AI - Dashboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <style>
-    body {
-      background-color: #000;
-      color: #e0e0e0;
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 20px;
-    }
-    h2 {
-      color: #ffa500;
-      margin-bottom: 15px;
-    }
-    .dashboard-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .kpi-card {
-      background-color: #111;
-      border: 1px solid #333;
-      border-radius: 5px;
-      padding: 15px;
-      flex: 1;
-      min-width: 160px;
-      text-align: center;
-    }
-    .kpi-value {
-      color: #ffa500;
-      font-size: 1.8em;
-      font-weight: bold;
-      margin-top: 5px;
-    }
-    .chart-container {
-      background-color: #111;
-      border: 1px solid #333;
-      border-radius: 5px;
-      padding: 10px;
-      flex: 2 1 300px;
-      max-width: 600px;
-      height: 250px;
-    }
-    canvas {
-      max-height: 220px;
-    }
-  </style>
-</head>
-<body>
-<h2>Dashboard</h2>
-<div class="dashboard-container">
-
-  <div class="kpi-card">
-    <div>Active Deals</div>
-    <div class="kpi-value">12</div>
-  </div>
-
-  <div class="kpi-card">
-    <div>New Leads (Week)</div>
-    <div class="kpi-value">5</div>
-  </div>
-
-  <div class="kpi-card">
-    <div>Conversion Rate</div>
-    <div class="kpi-value">30%</div>
-  </div>
-
-  <div class="kpi-card">
-    <div>Pipeline Volume</div>
-    <div class="kpi-value">$50M</div>
-  </div>
-
-  <div class="chart-container">
-    <canvas id="loanVolumeChart"></canvas>
-  </div>
-
-  <div class="chart-container">
-    <canvas id="leadSourceChart"></canvas>
-  </div>
-
-</div>
-
-<script>
-// Loan Volume Chart
-new Chart(document.getElementById('loanVolumeChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Q1', 'Q2', 'Q3', 'Q4'],
-    datasets: [{
-      label: 'Loan Volume ($M)',
-      data: [10, 15, 8, 12],
-      backgroundColor: '#ffa500',
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    scales: {
-      y: {beginAtZero: true, ticks: { color: '#aaa' }, grid: { color: '#333' }},
-      x: { ticks: { color: '#aaa' }, grid: { color: '#333' }}
-    },
-    plugins: { legend: { display: false }}
-  }
-});
-
-// Lead Source Chart
-new Chart(document.getElementById('leadSourceChart'), {
-  type: 'pie',
-  data: {
-    labels: ['Referral', 'Website', 'Conference'],
-    datasets: [{
-      data: [5, 8, 3],
-      backgroundColor: ['#ffa500', '#555', '#888'],
-    }]
-  },
-  options: {
-    responsive: true,
-    maintainAspectRatio: false,
-    plugins: {
-      legend: { position: 'right', labels: { color: '#aaa' }}
-    }
-  }
-});
-</script>
-
-</body>
-</html>
+   <div class="outreach-container">
+      <div class="sequence-list">
+        <h3>Email Sequences</h3>
+        <ul>
+          <li class="active">ACME Corp Outreach</li>
+          <li>Beta Co Follow-up</li>
+          <li>Client X Nurture</li>
+        </ul>
+      </div>
+      <div class="sequence-details">
+        <h3>Sequence: ACME Corp Outreach</h3>
+        <div class="message outgoing">
+          <p><strong>You:</strong> Hello, I'm reaching out regarding financing options...</p>
+        </div>
+        <div class="message incoming">
+          <p><strong>ACME Corp:</strong> Thank you for contacting us. We are interested...</p>
+        </div>
+        <div class="message outgoing">
+          <p><strong>You:</strong> Great! I will gather some options and send them over.</p>
+        </div>
+        <div class="ai-suggestion">
+          AI Suggestion: {"next_best_action": "Schedule call", "draft_email": "Would you be available for a call next week to discuss details?"}
+        </div>
+      </div>
+    </div>
 
