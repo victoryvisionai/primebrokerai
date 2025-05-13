@@ -1,36 +1,98 @@
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
 body {
-  display: flex;
-  align-items: center; /* Vertically center */
-  justify-content: center; /* Horizontally center */
-  background-color: #000; /* Retain background */
-  color: #e0e0e0;
+  background-color: #000;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.login-container {
-  background: #111;
-  padding: 2em;
-  border: 1px solid #333;
-  border-radius: 5px;
+/* Navbar/Header styling */
+.navbar {
+  background-color: #111;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #ffa500;
+  border-bottom: 2px solid #ffa500;
+}
+
+/* Main content spacing and layout */
+.main-content {
+  padding: 30px 50px;
+}
+
+.page-title {
+  color: #ffa500;
+  margin-bottom: 20px;
+}
+
+/* KPI Card Styling */
+.kpis {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.kpi-card {
+  background-color: #111;
+  border-radius: 6px;
+  padding: 20px;
   text-align: center;
-  width: 300px;
+  flex: 1;
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(255,165,0,0.5);
 }
 
-input, button {
-  width: 100%;
-  padding: 0.5em;
-  margin-top: 1em;
-  border-radius: 3px;
+.kpi-card:last-child {
+  margin-right: 0;
 }
 
-button {
-  background-color: #ffa500;
-  color: #000;
-  cursor: pointer;
+.kpi-title {
+  display: block;
+  color: #bbb;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.kpi-value {
+  font-size: 28px;
+  color: #ffa500;
+}
+
+/* Chart Container Styling */
+.charts {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.chart-container {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(255,165,0,0.3);
 }
